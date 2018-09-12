@@ -10,27 +10,27 @@ import edu.illinois.cs.cs125.lib.mazemaker.Maze;
 @SuppressWarnings("checkstyle:emptyblock")
 public class SolveMaze {
 
-    while (isFinished() == false){
-        while (canMove()== false){
+    while (isFinished() == false)
+
+    {
+        while (canMove() == false) {
             turnRight();
         }
-        while(canMove() == true) {
+        while (canMove() == true) {
             move();
             turnLeft();
-            if(canMove() == false){
+            if (canMove() == false) {
                 turnRight();
                 turnRight();
-            }
-            else {
+            } else {
                 move();
             }
-            if(canMove()== false){
+            if (canMove() == false) {
                 turnRight();
             }
 
         }
-
-    }
+    } 
 
 
     public static void main(final String[] unused) {
